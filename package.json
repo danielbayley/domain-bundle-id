@@ -1,0 +1,25 @@
+{
+  "name": "@danielbayley/domain-bundle-id",
+  "version": "1.0.0",
+  "description": "Get a macOS bundle identifier from a domain.",
+  "keywords": [
+    "bundle",
+    "bundleid",
+    "id",
+    "identifier",
+    "CFBundleName",
+    "CFBundleIdentifier",
+    "macos",
+    "osx",
+    "plist"
+  ],
+  "homepage": "https://github.com/danielbayley/domain-bundle-id#readme",
+  "repository": "danielbayley/domain-bundle-id",
+  "bugs": "https://github.com/danielbayley/domain-bundle-id/issues",
+  "author": {
+    "name": "Daniel Bayley",
+    "email": "daniel.bayley@me.com",
+    "url": "github.com/danielbayley"
+  },
+  "license": "MIT"
+}
