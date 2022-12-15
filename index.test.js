@@ -1,5 +1,5 @@
 import parse from 'url-parse-lax'
-import {genBundleId, getDomain} from './index'
+import {genBundleId, getDomain} from './index.js'
 
 const domain = 'https://domain.com/App?q=uery#anchor'
 const {protocol, host, pathname, path, hash} = parse(domain)

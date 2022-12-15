@@ -27,13 +27,35 @@
     "node": ">=14.0.0"
   },
   "devDependencies": {
-    "jest": "^29.3.1"
+    "jest": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "xo": "^0.53.1"
   },
   "dependencies": {
     "pascal-case": "^3.1.2",
     "url-parse-lax": "^5.0.0"
   },
+  "lint-staged": {
+    "*.js": [
+      "xo",
+      "jest --bail --findRelatedTests"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "overrides": [
+      {
+        "files": [
+          "*.test.js"
+        ],
+        "envs": [
+          "jest"
+        ]
+      }
+    ]
+  },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "xo && node --experimental-vm-modules node_modules/jest/bin/jest.js"
   }
 }
