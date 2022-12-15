@@ -21,5 +21,14 @@
     "email": "daniel.bayley@me.com",
     "url": "github.com/danielbayley"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "url-parse-lax": "^5.0.0"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  }
 }
