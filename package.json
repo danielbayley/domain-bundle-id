@@ -22,10 +22,15 @@
     "url": "github.com/danielbayley"
   },
   "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "devDependencies": {
     "jest": "^29.3.1"
   },
   "dependencies": {
+    "pascal-case": "^3.1.2",
     "url-parse-lax": "^5.0.0"
   },
   "scripts": {
