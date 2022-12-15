@@ -8,6 +8,12 @@ Install
 npm install @danielbayley/domain-bundle-id #--save-dev
 ~~~
 
+Contribute
+----------
+~~~ sh
+git config core.hooksPath .github/hooks
+~~~
+
 License
 -------
 [MIT] © [Daniel Bayley]
