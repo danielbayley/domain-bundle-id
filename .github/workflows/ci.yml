@@ -1,0 +1,23 @@
+name: CI
+on:
+  push:
+    branches: main
+    paths: '*.js'
+  pull_request:
+    paths: '*.js'
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 16, 17, 18, 19]
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}.x
+
+    - run: npm ci
+    - run: npm test
