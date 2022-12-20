@@ -23,7 +23,7 @@ getDomain('com.domain.App') // domain.com/App
 Assuming you already [configured] `npm` to work with [GitHub Packages]:
 ~~~ sh
 npm config set @danielbayley:registry https://npm.pkg.github.com
-npm config set //npm.pkg.github.com/:_authToken ${GITHUB_TOKEN}
+npm config set //npm.pkg.github.com:_authToken ${GITHUB_TOKEN}
 npm install @danielbayley/domain-bundle-id #--save-dev
 ~~~
 
