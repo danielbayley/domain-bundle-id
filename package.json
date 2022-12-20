@@ -1,6 +1,6 @@
 {
   "name": "@danielbayley/domain-bundle-id",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get a macOS bundle identifier from a domain.",
   "keywords": [
     "bundle",
