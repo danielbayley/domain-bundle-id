@@ -60,7 +60,6 @@
     ]
   },
   "scripts": {
-    "prepare": "git config core.hooksPath .github/hooks",
     "pre-commit": "lint-staged",
     "test": "xo && node --experimental-vm-modules node_modules/.bin/jest ${GITHUB_ACTIONS+--all --ci --no-cache}",
     "prepublishOnly": "npm test",
